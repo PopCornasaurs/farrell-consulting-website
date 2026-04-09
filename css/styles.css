@@ -112,11 +112,11 @@ h3 { font-size: 1.2rem; font-weight: 600; }
 .nav-links a:hover,
 .nav-links a.active { border-bottom-color: var(--gold); }
 .nav-cta {
-  background: var(--gold); color: var(--navy) !important;
+  background: var(--gold); color: var(--navy);
   font-weight: 600; font-size: .9rem;
-  padding: .55rem 1.3rem !important;
+  padding: .55rem 1.3rem;
   border-radius: var(--radius);
-  border-bottom: none !important;
+  border-bottom: none;
   transition: background .2s;
 }
 .nav-cta:hover { background: var(--gold-dark); }
@@ -274,7 +274,11 @@ h3 { font-size: 1.2rem; font-weight: 600; }
 }
 .form-group input:focus,
 .form-group select:focus,
-.form-group textarea:focus { outline: none; border-color: var(--navy); }
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--navy);
+  box-shadow: 0 0 0 3px rgba(27,47,94,.18);
+}
 .form-group textarea  { resize: vertical; min-height: 120px; }
 
 #thank-you            { display: none; }
@@ -320,7 +324,7 @@ h3 { font-size: 1.2rem; font-weight: 600; }
     font-size: 1rem; min-height: 44px; width: 100%;
   }
   .nav-links a:hover  { background: var(--surface); }
-  .nav-cta            { display: none !important; }
+  .nav-cta            { display: none; }
   .nav-hamburger      { display: flex; }
 
   /* Hero */
