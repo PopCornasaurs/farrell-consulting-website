@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Farrell Consulting</title>
+  <meta name="description" content="Get in touch with Farrell Consulting. We serve small business owners and freelancers. Request a free consultation today." />
+  <meta property="og:title" content="Contact | Farrell Consulting" />
+  <meta property="og:description" content="Contact Farrell Consulting to get a free consultation for bookkeeping or tax services." />
+  <link rel="canonical" href="https://farrellconsulting.net/contact.html" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="navbar-inner">
+        <a href="index.html" class="nav-logo">Farrell<span>.</span>Consulting</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <a href="contact.html" class="nav-cta">Free Consultation</a>
+        <button class="nav-hamburger" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Page hero -->
+    <section class="page-hero">
+      <h1>Let's Talk About Your Books</h1>
+      <p>We serve small business owners and freelancers. Reach out and we'll respond within one business day.</p>
+    </section>
+
+    <!-- Contact layout -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-layout">
+
+          <!-- Left: info -->
+          <div class="contact-info">
+            <div class="section-label">Get in Touch</div>
+            <h2 class="section-title">Free Consultation</h2>
+            <p>Not sure what you need? That's okay — just fill out the form and tell us a bit about your business. We'll reach out to schedule a free, no-obligation consultation.</p>
+            <p>We work with:</p>
+            <div class="contact-detail"><span aria-hidden="true">✓</span> Freelancers &amp; independent contractors</div>
+            <div class="contact-detail"><span aria-hidden="true">✓</span> Sole proprietors &amp; self-employed individuals</div>
+            <div class="contact-detail"><span aria-hidden="true">✓</span> LLCs and S-Corps</div>
+            <div class="contact-detail"><span aria-hidden="true">✓</span> Side businesses &amp; new startups</div>
+          </div>
+
+          <!-- Right: form -->
+          <div>
+            <form id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name">Full Name <span aria-hidden="true">*</span></label>
+                <input type="text" id="name" name="name" placeholder="Jane Smith" required autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address <span aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" placeholder="jane@example.com" required autocomplete="email" />
+              </div>
+              <div class="form-group">
+                <label for="business-type">Business Type <span aria-hidden="true">*</span></label>
+                <select id="business-type" name="business-type" required>
+                  <option value="">Select one…</option>
+                  <option value="freelancer">Freelancer / Self-Employed</option>
+                  <option value="llc">LLC / S-Corp</option>
+                  <option value="sole-prop">Sole Proprietor</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message <span aria-hidden="true">*</span></label>
+                <textarea id="message" name="message" placeholder="Tell us a bit about what you need — we're here to help." required></textarea>
+              </div>
+              <button type="submit" class="btn-secondary">Send Message</button>
+            </form>
+
+            <div id="thank-you" role="alert">
+              <div class="thank-you-box">
+                <h3>Message Received!</h3>
+                <p>Thanks for reaching out. We'll be in touch within one business day.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">Farrell<span>.</span>Consulting</div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <p class="footer-copy">&copy; 2026 Farrell Consulting. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
