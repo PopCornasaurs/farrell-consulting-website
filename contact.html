@@ -17,7 +17,7 @@
 <body>
 
   <header>
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Main">
       <div class="navbar-inner">
         <a href="index.html" class="nav-logo">Farrell<span>.</span>Consulting</a>
         <ul class="nav-links">
@@ -62,16 +62,17 @@
           <!-- Right: form -->
           <div>
             <form id="contact-form" novalidate>
+              <p class="form-legend"><span aria-hidden="true">*</span> Required fields</p>
               <div class="form-group">
-                <label for="name">Full Name <span aria-hidden="true">*</span></label>
+                <label for="name">Full Name <span>*</span></label>
                 <input type="text" id="name" name="name" placeholder="Jane Smith" required autocomplete="name" />
               </div>
               <div class="form-group">
-                <label for="email">Email Address <span aria-hidden="true">*</span></label>
+                <label for="email">Email Address <span>*</span></label>
                 <input type="email" id="email" name="email" placeholder="jane@example.com" required autocomplete="email" />
               </div>
               <div class="form-group">
-                <label for="business-type">Business Type <span aria-hidden="true">*</span></label>
+                <label for="business-type">Business Type <span>*</span></label>
                 <select id="business-type" name="business-type" required>
                   <option value="">Select one…</option>
                   <option value="freelancer">Freelancer / Self-Employed</option>
@@ -81,7 +82,7 @@
                 </select>
               </div>
               <div class="form-group">
-                <label for="message">Message <span aria-hidden="true">*</span></label>
+                <label for="message">Message <span>*</span></label>
                 <textarea id="message" name="message" placeholder="Tell us a bit about what you need — we're here to help." required></textarea>
               </div>
               <button type="submit" class="btn-secondary">Send Message</button>
