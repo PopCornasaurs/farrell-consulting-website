@@ -354,6 +354,15 @@ h3 { font-size: 1.2rem; font-weight: 600; }
   .btn-primary,
   .btn-secondary      { min-height: 44px; width: 100%; text-align: center; display: block; }
   .cta-strip .btn-primary { width: auto; display: inline-block; }
+
+  /* V2 responsive overrides */
+  .nav-phone             { display: none; }
+  .hero-two-col          { grid-template-columns: 1fr; }
+  .hero-two-col .hero-text { text-align: center; }
+  .hero-ctas             { justify-content: center; }
+  .hero-photo            { display: none; }
+  .services-preview-grid { grid-template-columns: 1fr; }
+  .pricing-grid          { grid-template-columns: 1fr; }
 }
 
 /* =============================================
@@ -384,7 +393,7 @@ h3 { font-size: 1.2rem; font-weight: 600; }
 .hero-two-col .hero-text { text-align: left; }
 /* Override auto-centering margins from base .hero h1 / .hero p */
 .hero-two-col h1 { margin: 0 0 1.2rem; }
-.hero-two-col p  { margin: 0; }
+.hero-two-col .hero-text > p  { margin: 0; }
 .hero-photo {
   background: rgba(255, 255, 255, 0.1);
   border: 2px dashed rgba(255, 255, 255, 0.35);
@@ -515,7 +524,7 @@ h3 { font-size: 1.2rem; font-weight: 600; }
   border-top-color: var(--gold);
   box-shadow: var(--shadow-md);
 }
-.most-popular {
+.pricing-card .most-popular {
   display: inline-block;
   background: var(--gold);
   color: var(--white);
@@ -545,7 +554,7 @@ h3 { font-size: 1.2rem; font-weight: 600; }
   font-weight: 400;
   color: var(--text);
 }
-.feature-list {
+.pricing-card .feature-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -554,7 +563,7 @@ h3 { font-size: 1.2rem; font-weight: 600; }
   gap: 0.6rem;
   flex: 1;
 }
-.feature-list li {
+.pricing-card .feature-list li {
   display: flex;
   gap: 0.6rem;
   align-items: flex-start;
@@ -562,7 +571,7 @@ h3 { font-size: 1.2rem; font-weight: 600; }
   color: var(--text);
   line-height: 1.4;
 }
-.feature-list li::before {
+.pricing-card .feature-list li::before {
   content: "✓";
   color: var(--green);
   font-weight: 700;
@@ -631,15 +640,3 @@ h3 { font-size: 1.2rem; font-weight: 600; }
   margin: 0;
 }
 
-/* =============================================
-   V2: Responsive overrides (appended to existing @media block)
-   ============================================= */
-@media (max-width: 768px) {
-  .nav-phone           { display: none; }
-  .hero-two-col        { grid-template-columns: 1fr; }
-  .hero-two-col .hero-text { text-align: center; }
-  .hero-ctas           { justify-content: center; }
-  .hero-photo          { display: none; }
-  .services-preview-grid { grid-template-columns: 1fr; }
-  .pricing-grid        { grid-template-columns: 1fr; }
-}
