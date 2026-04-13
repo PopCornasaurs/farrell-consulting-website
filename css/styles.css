@@ -355,3 +355,291 @@ h3 { font-size: 1.2rem; font-weight: 600; }
   .btn-secondary      { min-height: 44px; width: 100%; text-align: center; display: block; }
   .cta-strip .btn-primary { width: auto; display: inline-block; }
 }
+
+/* =============================================
+   V2: Nav phone number
+   ============================================= */
+.nav-phone {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--navy);
+  text-decoration: none;
+  white-space: nowrap;
+  letter-spacing: 0.01em;
+}
+.nav-phone:hover { text-decoration: underline; }
+
+/* =============================================
+   V2: Hero two-column layout
+   ============================================= */
+.hero-two-col {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 3rem;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+}
+.hero-two-col .hero-text { text-align: left; }
+/* Override auto-centering margins from base .hero h1 / .hero p */
+.hero-two-col h1 { margin: 0 0 1.2rem; }
+.hero-two-col p  { margin: 0; }
+.hero-photo {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px dashed rgba(255, 255, 255, 0.35);
+  border-radius: var(--radius-lg);
+  min-height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 2rem;
+}
+.hero-ctas {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.75rem;
+}
+.btn-ghost {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  border: 2px solid rgba(255, 255, 255, 0.75);
+  color: var(--white);
+  background: transparent;
+  border-radius: var(--radius);
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+  cursor: pointer;
+}
+.btn-ghost:hover {
+  background: var(--white);
+  color: var(--navy);
+  border-color: var(--white);
+}
+
+/* =============================================
+   V2: Services preview strip (home page)
+   ============================================= */
+.services-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.services-preview-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  border-top: 4px solid var(--gold);
+  box-shadow: var(--shadow-sm);
+  padding: 1.75rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.services-preview-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+.services-preview-card .card-icon {
+  font-size: 2rem;
+  line-height: 1;
+}
+.services-preview-card h3 {
+  font-size: 1.05rem;
+  color: var(--navy);
+  margin: 0;
+}
+.services-preview-card p {
+  font-size: 0.9rem;
+  color: var(--text);
+  margin: 0;
+  flex: 1;
+  line-height: 1.5;
+}
+.card-link {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--green);
+  text-decoration: none;
+  margin-top: 0.5rem;
+}
+.card-link:hover { text-decoration: underline; }
+
+/* =============================================
+   V2: Pricing teaser row (home page)
+   ============================================= */
+.pricing-teaser {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+}
+.pricing-teaser p {
+  font-size: 1.1rem;
+  color: var(--navy);
+  font-weight: 500;
+  margin: 0 0 0.75rem;
+}
+.pricing-teaser a {
+  font-weight: 600;
+  color: var(--green);
+  text-decoration: none;
+}
+.pricing-teaser a:hover { text-decoration: underline; }
+
+/* =============================================
+   V2: Pricing page cards
+   ============================================= */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+.pricing-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  border-top: 4px solid var(--navy);
+  box-shadow: var(--shadow-sm);
+  padding: 2rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.pricing-card.featured {
+  border-top-color: var(--gold);
+  box-shadow: var(--shadow-md);
+}
+.most-popular {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--white);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  padding: 0.2rem 0.65rem;
+  border-radius: 99px;
+  align-self: flex-start;
+}
+.pricing-card h3 {
+  font-size: 1.3rem;
+  color: var(--navy);
+  margin: 0;
+}
+.pricing-price {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.1;
+}
+.pricing-price span {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--text);
+}
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  flex: 1;
+}
+.feature-list li {
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
+  font-size: 0.9rem;
+  color: var(--text);
+  line-height: 1.4;
+}
+.feature-list li::before {
+  content: "✓";
+  color: var(--green);
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 0.05em;
+}
+.pricing-card .btn-secondary {
+  display: block;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+.pricing-note {
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--text);
+  margin-top: 2rem;
+  opacity: 0.75;
+  line-height: 1.6;
+}
+
+/* =============================================
+   V2: Credentials section (about page)
+   ============================================= */
+.credential-section {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+.credential-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 2rem;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+  max-width: 220px;
+}
+.credential-placeholder {
+  width: 120px;
+  height: 120px;
+  background: var(--surface);
+  border: 2px dashed rgba(27, 47, 94, 0.4);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  color: var(--navy);
+  text-align: center;
+  padding: 0.5rem;
+  line-height: 1.4;
+}
+.credential-card h4 {
+  font-size: 0.95rem;
+  color: var(--navy);
+  font-weight: 600;
+  margin: 0;
+}
+.credential-card p {
+  font-size: 0.8rem;
+  color: var(--text);
+  opacity: 0.65;
+  margin: 0;
+}
+
+/* =============================================
+   V2: Responsive overrides (appended to existing @media block)
+   ============================================= */
+@media (max-width: 768px) {
+  .nav-phone           { display: none; }
+  .hero-two-col        { grid-template-columns: 1fr; }
+  .hero-two-col .hero-text { text-align: center; }
+  .hero-ctas           { justify-content: center; }
+  .hero-photo          { display: none; }
+  .services-preview-grid { grid-template-columns: 1fr; }
+  .pricing-grid        { grid-template-columns: 1fr; }
+}
