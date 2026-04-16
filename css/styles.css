@@ -390,6 +390,7 @@ h3 { font-size: 1.2rem; font-weight: 600; }
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  justify-content: center;
   margin-top: 1.75rem;
 }
 .btn-ghost {
