@@ -359,10 +359,7 @@ h3 { font-size: 1.2rem; font-weight: 600; }
 
   /* V2 responsive overrides */
   .nav-phone             { display: none; }
-  .hero-two-col          { grid-template-columns: 1fr; }
-  .hero-two-col .hero-text { text-align: center; }
   .hero-ctas             { justify-content: center; }
-  .hero-photo            { display: none; }
   .services-preview-grid { grid-template-columns: 1fr; }
   .pricing-grid          { grid-template-columns: 1fr; }
 }
@@ -383,30 +380,11 @@ h3 { font-size: 1.2rem; font-weight: 600; }
 /* =============================================
    V2: Hero two-column layout
    ============================================= */
-.hero-two-col {
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-  gap: 3rem;
-  align-items: center;
-  max-width: 1100px;
+.hero-centered {
+  max-width: 780px;
   margin: 0 auto;
+  text-align: center;
   width: 100%;
-}
-.hero-two-col .hero-text { text-align: left; }
-/* Override auto-centering margins from base .hero h1 / .hero p */
-.hero-two-col h1 { margin: 0 0 1.2rem; }
-.hero-two-col .hero-text > p  { margin: 0; }
-.hero-photo {
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  min-height: 360px;
-}
-.hero-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  border-radius: var(--radius-lg);
 }
 .hero-ctas {
   display: flex;
