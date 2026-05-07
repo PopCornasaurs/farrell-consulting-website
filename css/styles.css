@@ -565,6 +565,45 @@ h3 { font-size: 1.2rem; font-weight: 600; }
 }
 
 /* =============================================
+   Meet the Owner section (about page)
+   ============================================= */
+.owner-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 3.5rem;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+}
+.owner-photo-wrap {
+  flex-shrink: 0;
+  width: 320px;
+}
+.owner-photo {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  object-fit: cover;
+}
+.owner-bio {
+  flex: 1;
+  min-width: 260px;
+}
+.owner-bio p {
+  margin-bottom: 1rem;
+  color: #444;
+}
+.owner-closing {
+  font-style: italic;
+  font-weight: 500;
+  color: var(--navy) !important;
+  margin-top: 1.5rem !important;
+}
+@media (max-width: 700px) {
+  .owner-layout { flex-direction: column; }
+  .owner-photo-wrap { width: 100%; max-width: 340px; margin: 0 auto; }
+}
+
+/* =============================================
    V2: Credentials section (about page)
    ============================================= */
 .credential-section {
