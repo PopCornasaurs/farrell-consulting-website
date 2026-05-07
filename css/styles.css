@@ -228,6 +228,7 @@ h3 { font-size: 1.2rem; font-weight: 600; }
 .about-centered p     { margin-bottom: 1rem; color: #444; }
 
 /* Meet the Owner */
+.owner-label { font-size: 1.25rem; }
 .owner-layout {
   display: grid;
   grid-template-columns: 340px 1fr;
