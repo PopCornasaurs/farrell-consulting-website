@@ -228,19 +228,14 @@ h3 { font-size: 1.2rem; font-weight: 600; }
 .about-centered p     { margin-bottom: 1rem; color: #444; }
 
 /* Meet the Owner */
-.owner-label { font-size: 1.25rem; }
-.owner-layout {
+.owner-label { font-size: 1.25rem; margin-bottom: 1rem; }
+.owner-section {
   display: grid;
-  grid-template-columns: 340px 1fr;
-  gap: 3.5rem;
-  align-items: start;
-  margin-top: 2.5rem;
+  grid-template-columns: 42% 1fr;
+  min-height: 560px;
 }
 .owner-photo {
-  border-radius: var(--radius-lg);
   overflow: hidden;
-  box-shadow: var(--shadow-md);
-  height: 520px;
 }
 .owner-photo img {
   width: 100%;
@@ -248,6 +243,13 @@ h3 { font-size: 1.2rem; font-weight: 600; }
   object-fit: cover;
   object-position: top;
   display: block;
+}
+.owner-bio-wrapper {
+  padding: 4rem 5rem 4rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--white);
 }
 .owner-bio p {
   margin-bottom: 1.1rem;
@@ -257,8 +259,9 @@ h3 { font-size: 1.2rem; font-weight: 600; }
 .owner-bio p:last-child { margin-bottom: 0; }
 
 @media (max-width: 768px) {
-  .owner-layout { grid-template-columns: 1fr; }
-  .owner-photo  { max-height: 420px; }
+  .owner-section { grid-template-columns: 1fr; }
+  .owner-photo   { height: 380px; }
+  .owner-bio-wrapper { padding: 2.5rem 1.5rem; }
 }
 .values-strip {
   display: grid;
