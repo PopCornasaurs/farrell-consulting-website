@@ -608,6 +608,8 @@ h3 { font-size: 1.2rem; font-weight: 600; }
 .credential-section {
   display: flex;
   justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
   padding: 1rem 0;
 }
 .credential-card {
